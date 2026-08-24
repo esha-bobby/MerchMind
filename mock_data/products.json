@@ -1,0 +1,103 @@
+[
+  {
+    "id": "shoe-001",
+    "title": "Nice Shoes",
+    "description": "Comfortable and stylish shoes for everyone.",
+    "category": "shoes",
+    "price": 59.99
+  },
+  {
+    "id": "bag-001",
+    "title": "Everyday Tote Bag",
+    "description": "A useful bag for daily activities.",
+    "category": "bags",
+    "price": 34.99,
+    "colors": ["Black", "Blue"]
+  },
+  {
+    "id": "skin-001",
+    "title": "Fresh Face Cream",
+    "description": "A gentle cream for soft, healthy-looking skin.",
+    "category": "skincare",
+    "price": 24.99,
+    "return_policy": "30-day returns"
+  },
+  {
+    "id": "shirt-001",
+    "title": "Classic Cotton T-Shirt",
+    "description": "A comfortable everyday shirt with a regular fit.",
+    "category": "clothing",
+    "price": 22.00,
+    "material": "100% cotton",
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["White", "Black"],
+    "reviews": 18
+  },
+  {
+    "id": "watch-001",
+    "title": "Minimalist Wristwatch",
+    "description": "A simple watch with a clean face and adjustable strap.",
+    "category": "accessories",
+    "price": 48.50,
+    "material": "Stainless steel case, leather strap",
+    "colors": ["Silver", "Brown"],
+    "reviews": 27,
+    "return_policy": "30-day returns"
+  },
+  {
+    "id": "shoe-002",
+    "title": "Women's Lightweight Running Shoes",
+    "description": "Lightweight running shoes designed for everyday training and road runs. The breathable upper helps keep feet comfortable, while the cushioned sole supports each step.",
+    "category": "shoes",
+    "price": 89.99,
+    "material": "Mesh upper, rubber sole",
+    "sizes": ["6", "7", "8", "9", "10"],
+    "colors": ["Black", "White"],
+    "reviews": 42,
+    "return_policy": "30-day returns"
+  },
+  {
+    "id": "bag-002",
+    "title": "Water-Resistant Commuter Backpack",
+    "description": "A structured commuter backpack with a padded laptop compartment, two interior pockets, and adjustable shoulder straps. Fits laptops up to 15 inches.",
+    "category": "bags",
+    "price": 74.00,
+    "material": "Recycled polyester",
+    "colors": ["Navy", "Black"],
+    "reviews": 36,
+    "return_policy": "30-day returns"
+  },
+  {
+    "id": "skin-002",
+    "title": "Daily Hydrating Face Moisturizer",
+    "description": "A fragrance-free moisturizer for normal and dry skin. Use after cleansing in the morning and evening.",
+    "category": "skincare",
+    "price": 28.00,
+    "material": "Hyaluronic acid and ceramides",
+    "return_policy": "30-day returns",
+    "reviews": 51
+  },
+  {
+    "id": "shirt-002",
+    "title": "Women's Linen Button-Down Shirt",
+    "description": "A relaxed button-down shirt for warm-weather outfits. It has a curved hem, long sleeves, and a relaxed fit.",
+    "category": "clothing",
+    "price": 64.00,
+    "material": "100% linen",
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "colors": ["White", "Sage", "Blue"],
+    "reviews": 63,
+    "return_policy": "60-day returns"
+  },
+  {
+    "id": "speaker-001",
+    "title": "Portable Bluetooth Speaker",
+    "description": "A compact wireless speaker for indoor and outdoor listening. It connects to phones and tablets through Bluetooth, includes a USB-C charging cable, and plays for up to 12 hours on one charge.",
+    "category": "electronics",
+    "price": 79.00,
+    "material": "Recycled plastic housing",
+    "colors": ["Black", "Red"],
+    "reviews": 88,
+    "return_policy": "30-day returns"
+  }
+]
