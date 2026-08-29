@@ -5,6 +5,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.models.product import Product
+from app.audit import audit_product, AuditResult
 
 
 MOCK_DATA_PATH = Path(__file__).resolve().parents[2] / "mock_data" / "products.json"
@@ -40,6 +41,6 @@ def list_products() -> list[Product]:
     return [Product(**product_data) for product_data in products_data]
 
 
-@app.post("/api/audit", response_model=Product)
-def audit_product(product: Product) -> Product:
-    return product
+@app.post("/api/audit", response_model=AuditResult)
+def audit_product_endpoint(product: Product) -> AuditResult:
+    return audit_product(product)
