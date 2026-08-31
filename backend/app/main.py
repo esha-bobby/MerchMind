@@ -1,14 +1,10 @@
-import json
-from pathlib import Path
-
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.models.product import Product
 from app.audit import audit_product, AuditResult
+from app.shopify_graphql import get_shopify_client
 
-
-MOCK_DATA_PATH = Path(__file__).resolve().parents[2] / "mock_data" / "products.json"
 
 app = FastAPI(
     title="Kasparro AI Readiness Auditor API",
@@ -37,8 +33,8 @@ def health_check() -> dict[str, str]:
 
 @app.get("/api/products", response_model=list[Product])
 def list_products() -> list[Product]:
-    products_data = json.loads(MOCK_DATA_PATH.read_text())
-    return [Product(**product_data) for product_data in products_data]
+    shopify_client = get_shopify_client()
+    return shopify_client.fetch_products_sync()
 
 
 @app.post("/api/audit", response_model=AuditResult)
