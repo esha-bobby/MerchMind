@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Kasparro - Product AI Readiness Auditor',
+  title: 'MerchMind - Product AI Readiness Auditor',
   description: 'Check if your product descriptions are ready for AI shopping assistants.',
 };
 

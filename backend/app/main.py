@@ -7,7 +7,7 @@ from app.shopify_graphql import get_shopify_client
 
 
 app = FastAPI(
-    title="Kasparro AI Readiness Auditor API",
+    title="MerchMind AI Readiness Auditor API",
     description="Backend foundation for auditing Shopify product readiness for AI shopping assistants.",
     version="0.1.0",
 )
@@ -23,7 +23,7 @@ app.add_middleware(
 
 @app.get("/")
 def read_root() -> dict[str, str]:
-    return {"message": "Kasparro API is running"}
+    return {"message": "MerchMind API is running"}
 
 
 @app.get("/api/health")

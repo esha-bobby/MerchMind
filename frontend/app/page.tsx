@@ -41,7 +41,7 @@ export default function Home() {
   return (
     <div className="min-h-screen p-6 md:p-12">
       <header className="mb-12 text-center">
-        <h1 className="text-5xl font-bold text-accent mb-2">Kasparro</h1>
+        <h1 className="text-5xl font-bold text-accent mb-2">MerchMind</h1>
         <p className="text-lg text-gray-700">
           Check if your product descriptions are ready for AI shopping assistants
         </p>
